@@ -1,8 +1,8 @@
 # Digital-electronics-1
 
-##Labs
+## Labs
 
-'''vhdl
+```vhdl
 
 
-'''
+```
