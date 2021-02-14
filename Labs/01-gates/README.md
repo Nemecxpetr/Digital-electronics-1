@@ -52,6 +52,7 @@ Parts:
 * Link to your public EDA Playground example.
 
 **Distributive laws**
+
 ![Equiations dist. laws](Images/distributives.png)
     
 Code from EDU [Playground](https://www.edaplayground.com/x/8Nx3)
