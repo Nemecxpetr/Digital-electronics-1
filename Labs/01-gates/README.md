@@ -72,6 +72,6 @@ end architecture dataflow;
 Photo of the simulation results in EDA Playground: 
 ![Screenshot od EDA Playground](Images/DistributivesSim.PNG)
 
-From the simulation it is apparent that _d1 = d2_ and _d3 = d4_ which **proves distributive laws**.
+From the simulation it is apparent that _d1_ and _d2_ are equal as well as _d3_ and _d4_ which **verifies distributive laws**.
 
 
