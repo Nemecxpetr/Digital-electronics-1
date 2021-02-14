@@ -1,5 +1,8 @@
 # Digital-electronics-1
 
+***Petr Němec***
+***221480***
+
 ## Labs
 
 Most common VHDL operators are shown in the table.
@@ -16,17 +19,3 @@ Most common VHDL operators are shown in the table.
 | `xnor` | Exclusive OR with negated output |
 | `-- comment` | Comments |
 
-```vhdl
-
-```
-
-| **c** | **b** |**a** | **f(c,b,a)** |
-| :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 |  |
-| 0 | 0 | 1 |  |
-| 0 | 1 | 0 |  |
-| 0 | 1 | 1 |  |
-| 1 | 0 | 0 |  |
-| 1 | 0 | 1 |  |
-| 1 | 1 | 0 |  |
-| 1 | 1 | 1 |  |
