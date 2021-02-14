@@ -2,21 +2,21 @@
 
 ## Lab assignment
 
-- [x] Submit the GitHub link to your Digital-electronics-1 repository.
+- [x] 1. Submit the GitHub link to your Digital-electronics-1 repository.
 
-- [x] Verification of De Morgan's laws of function f(c,b,a). Submit:
+- [x] 2. Verification of De Morgan's laws of function f(c,b,a). Submit:
 
-*Listing of VHDL code design.vhd,
-*Screenshot with simulated time waveforms,
-*Link to your public EDA Playground example.
+* Listing of VHDL code design.vhd,
+* Screenshot with simulated time waveforms,
+* Link to your public EDA Playground example.
 
-- [x] Verification of Distributive laws. Submit:
+- [x] 3. Verification of Distributive laws. Submit:
 
-*Listing of VHDL code design.vhd,
-*Screenshot with simulated time waveforms,
-*Link to your public EDA Playground example.
+* Listing of VHDL code design.vhd,
+* Screenshot with simulated time waveforms,
+* Link to your public EDA Playground example.
 
-> - [ ] Prepare all tasks in your README file Digital-electronics-1/Labs/01-gates/README.md, export/print it to PDF, use BUT e-learning web page and submit a single PDF file. The deadline for submitting the task is the day before the next laboratory exercise. 
+> - [ ] Prepare all tasks in your README file Digital-electronics-1/Labs/01-gates/README.md, export/print it to PDF, use BUT e-learning web page and submit a single PDF file. The deadline for submitting the task is the day before the next laboratory exercise.
 
 
 ## 1 Submitting GitHub repository
