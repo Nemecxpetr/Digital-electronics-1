@@ -1,7 +1,8 @@
 # Digital-electronics-1
 
-***Petr Němec***
-***221480***
+  ***Petr Němec***
+  
+  ***221480***
 
 ## Labs
 
