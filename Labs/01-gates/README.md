@@ -16,7 +16,7 @@ Parts:
 
   Code from EDU [Playground](https://www.edaplayground.com/x/DcV5):
 
-  Excerpt from `design.vhd`:
+> Excerpt from `design.vhd`:
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -57,7 +57,7 @@ Parts:
     
 Code from EDU [Playground](https://www.edaplayground.com/x/8Nx3)
 
-  Excerpt from `design.vhd`:
+> Excerpt from `design.vhd`:
   
 ```vhdl
 
