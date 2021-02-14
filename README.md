@@ -16,6 +16,10 @@ Most common VHDL operators are shown in the table.
 | `xnor` | Exclusive OR with negated output |
 | `-- comment` | Comments |
 
+```vhdl
+
+```
+
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 |  |
