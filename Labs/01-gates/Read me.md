@@ -33,3 +33,9 @@ end architecture dataflow;
 
 ![Screenshot od EDA Playground](Images/DeMorgan1.PNG)
 
+We succesfully verified De Morgan's laws with function f(c,b,a)
+
+## 3 Verification of Distributive laws
+
+
+
