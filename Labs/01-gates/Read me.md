@@ -25,4 +25,5 @@ end architecture dataflow;
 |  1  |  1  |  0  |  0  |  0  |  0  |    
 |  1  |  1  |  1  |  0  |  0  |  0  |   
 
-![Screenshot od EDA Playground](Images/DeMorgan1.png)
+![Screenshot od EDA Playground](Images/DeMorgan1.PNG)
+
