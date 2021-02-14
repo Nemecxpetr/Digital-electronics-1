@@ -1,6 +1,9 @@
-# Logic gates
+# 01 - Logic gates
 
-[My playground](https://www.edaplayground.com/x/DcV5):
+My GitHub [repository](https://github.com/Nemecxpetr/Digital-electronics-1)
+
+My EDU [playground](https://www.edaplayground.com/x/DcV5):
+
 ```vhdl
 architecture dataflow of gates is
 begin
@@ -21,3 +24,5 @@ end architecture dataflow;
 |  1  |  0  |  1  |  1  |  1  |  1  |   
 |  1  |  1  |  0  |  0  |  0  |  0  |    
 |  1  |  1  |  1  |  0  |  0  |  0  |   
+
+![Screenshot od EDA Playground](Images/DeMorgan1.png)
