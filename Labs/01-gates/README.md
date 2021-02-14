@@ -60,5 +60,18 @@ Code from EDU [Playground](https://www.edaplayground.com/x/8Nx3)
 > Excerpt from `design.vhd`:
   
 ```vhdl
-
+architecture dataflow of gates is
+begin
+    d1_o  <= (x_i and y_i) or (x_i and z_i);
+    d2_o  <= x_i and (y_i or z_i);
+    d3_o  <= (x_i or y_i) and (x_i or z_i);
+    d4_o  <= x_i or (y_i and z_i);
+   
+end architecture dataflow;
 ```
+Photo of the simulation results in EDA Playground: 
+![Screenshot od EDA Playground](Images/DistributivesSim.PNG)
+
+From the simulation it is apparent that _d1 = d2_ and _d3 = d4_ which **proves distributive laws**.
+
+
