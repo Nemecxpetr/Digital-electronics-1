@@ -24,3 +24,6 @@
 According to the truth table, write canonical SoP (Sum of Products) and PoS (Product of Sums) forms for "equals" and "less than" functions:
 
 ![Binary comparator functions](Images/comparator.png)
+
+EDA Playground [link](https://www.edaplayground.com/x/pQ3D)
+
