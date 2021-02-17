@@ -27,3 +27,15 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 
 EDA Playground [link](https://www.edaplayground.com/x/pQ3D)
 
+```vhdl
+architecture Behavioral of comparator_2bit is
+begin
+
+    B_less_A_o   <= '1' when (b_i < a_i) else '0';
+    B_equals_A_o <= '1' when (b_i = a_i) else '0';
+    B_greater_A_o <= '1' when (b_i > a_i) else '0';
+    
+end architecture Behavioral;
+```
+
+
