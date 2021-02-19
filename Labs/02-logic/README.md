@@ -6,8 +6,9 @@
    * -[x] Binary comparator truth table.
 
 2. A 2-bit comparator. Submit:
-  * -[ ] Karnaugh maps for all three functions.
-  * -[ ] Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function.
+  * -[x] Karnaugh maps for all three functions.
+  * -[ ] Simplified SoP form of the "greater than" function 
+  * -[ ] And simplified PoS form of the "less than" function.
 
 3. A 4-bit binary comparator. Submit:
   * -[ ] Listing of VHDL code (`design.vhd`),
@@ -43,6 +44,9 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 ![Binary comparator functions](Images/comparator.png)
 
 ## 2 - A 2-bit binary comparator
+Karnaugh maps for all free functions
+
+![Karnaugh](Images/Karnaugh.png)
 
 
 ## 3 - A 4-bit binary comparator
