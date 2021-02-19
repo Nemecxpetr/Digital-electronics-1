@@ -42,6 +42,10 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 
 ![Binary comparator functions](Images/comparator.png)
 
+## 2 - A 2-bit binary comparator
+
+
+## 3 - A 4-bit binary comparator
 EDA Playground [link](https://www.edaplayground.com/x/pQ3D)
 
 ```vhdl
