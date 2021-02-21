@@ -7,8 +7,8 @@
 
 2. A 2-bit comparator. Submit:
   * -[x] Karnaugh maps for all three functions.
-  * -[ ] Simplified SoP form of the "greater than" function 
-  * -[ ] And simplified PoS form of the "less than" function.
+  * -[x] Simplified SoP form of the "greater than" function 
+  * -[x] And simplified PoS form of the "less than" function.
 
 
 3. A 4-bit binary comparator. Submit:
@@ -47,8 +47,12 @@ Karnaugh maps for all free functions
 
 ![Karnaugh](Images/Karnaugh.png)
 
+Simplified SoP form of the "greater than" function and a PoS form of the "less than" function:
+
+![Simplified equations](Images\2_equations.png)
 
 ## 3 - A 4-bit binary comparator
+
 EDA Playground [link](https://www.edaplayground.com/x/pQ3D)
 
 ```vhdl
