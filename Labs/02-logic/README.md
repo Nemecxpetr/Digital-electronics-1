@@ -38,9 +38,6 @@
 | 14 | 1 1 | 1 0 | 1 | 0 | 0 |
 | 15 | 1 1 | 1 1 | 0 | 1 | 0 |
 
-According to the truth table, write canonical SoP (Sum of Products) and PoS (Product of Sums) forms for "equals" and "less than" functions:
-
-![Binary comparator functions](Images/comparator.png)
 
 ## 2 A 2-bit binary comparator
 Karnaugh maps for all free functions
