@@ -3,17 +3,13 @@
 ## Lab assignment
 
 1. Preparation tasks (done before the lab at home). Submit:
-  * Binary comparator truth table.
+  * -[x] Binary comparator truth table.
 
 2. A 2-bit comparator. Submit:
-<<<<<<< HEAD
-  *  Karnaugh maps for all three functions.
-  *  Simplified SoP form of the "greater than" function and simplified PoS form of the "less than" function.
-=======
   * -[x] Karnaugh maps for all three functions.
   * -[ ] Simplified SoP form of the "greater than" function 
   * -[ ] And simplified PoS form of the "less than" function.
->>>>>>> d53ccf43311b2d12227dde0fcd97caec0c65ea53
+
 
 3. A 4-bit binary comparator. Submit:
   * -[ ] Listing of VHDL code (`design.vhd`),
