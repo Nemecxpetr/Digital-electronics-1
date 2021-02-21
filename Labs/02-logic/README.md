@@ -140,7 +140,7 @@ begin
         report "Test failed for input combination: 1111, 1010" severity error;
         
         s_b <= "0000"; s_a <= "1100"; wait for 100 ns;
-        assert ((s_B_greater_A = '0') and (s_B_equals_A = '0') and (s_B_less_A = '1'))
+        assert ((s_B_greater_A = '0') and (s_B_equals_A = '1') and (s_B_less_A = '0'))
         report "Test failed for input combination: 0000, 1100" severity error;
         
           s_b <= "0011"; s_a <= "1001"; wait for 100 ns;
@@ -165,11 +165,12 @@ end architecture testbench;
 Listing of simulator console output, i.e. with reported error:
 
 ```
-[2021-02-21 14:41:40 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   
+[2021-02-21 14:44:21 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   
 analyze design.vhd
 analyze testbench.vhd
 elaborate tb_comparator_4bit
 testbench.vhd:46:9:@0ms:(report note): Stimulus process started
+testbench.vhd:69:9:@500ns:(assertion error): Test failed for input combination: 0000, 1100
 testbench.vhd:81:9:@800ns:(assertion error): Test failed for input combination: 0111, 0101
 testbench.vhd:84:9:@800ns:(report note): Stimulus process finished
 Done
