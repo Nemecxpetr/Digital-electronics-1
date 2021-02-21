@@ -12,8 +12,8 @@
 
 
 3. A 4-bit binary comparator. Submit:
-  * -[ ] Listing of VHDL code (`design.vhd`),
-  * -[ ] Listing of VHDL testbench (`testbench.vhd`),
+  * -[x] Listing of VHDL code (`design.vhd`),
+  * -[x] Listing of VHDL testbench (`testbench.vhd`),
   * -[ ] Listing of simulator console output, i.e. with reported error,
   * -[ ] Link to your public EDA Playground example.
 
@@ -53,7 +53,7 @@ Simplified SoP form of the "greater than" function and a PoS form of the "less t
 
 ## 3 - A 4-bit binary comparator
 
-EDA Playground [link](https://www.edaplayground.com/x/Xmx8)
+Public EDA Playground [link](https://www.edaplayground.com/x/Xmx8).
 
 Listing of `design.vhd`
 
@@ -167,3 +167,15 @@ end architecture testbench;
 
 ```
 
+Listing of simulator console output, i.e. with reported error:
+
+```
+[2021-02-21 14:07:07 EST] ghdl -i design.vhd testbench.vhd  && ghdl -m  tb_comparator_4bit && ghdl -r  tb_comparator_4bit   
+analyze design.vhd
+analyze testbench.vhd
+elaborate tb_comparator_4bit
+testbench.vhd:46:9:@0ms:(report note): Stimulus process started
+testbench.vhd:81:9:@800ns:(assertion error): Test failed for input combination: 0101, 0101
+testbench.vhd:84:9:@800ns:(report note): Stimulus process finished
+Done
+```
