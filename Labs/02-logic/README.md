@@ -42,7 +42,7 @@ According to the truth table, write canonical SoP (Sum of Products) and PoS (Pro
 
 ![Binary comparator functions](Images/comparator.png)
 
-## 2 - A 2-bit binary comparator
+## 2 A 2-bit binary comparator
 Karnaugh maps for all free functions
 
 ![Karnaugh](Images/Karnaugh.png)
@@ -51,7 +51,7 @@ Simplified SoP form of the "greater than" function and a PoS form of the "less t
 
 ![Simplified equations](Images/2_equations.png)
 
-## 3 - A 4-bit binary comparator
+## 3 A 4-bit binary comparator
 
 Public EDA Playground [link](https://www.edaplayground.com/x/Xmx8).
 
