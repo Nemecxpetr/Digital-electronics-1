@@ -14,8 +14,8 @@
 3. A 4-bit binary comparator. Submit:
   * -[x] Listing of VHDL code (`design.vhd`),
   * -[x] Listing of VHDL testbench (`testbench.vhd`),
-  * -[ ] Listing of simulator console output, i.e. with reported error,
-  * -[ ] Link to your public EDA Playground example.
+  * -[x] Listing of simulator console output, i.e. with reported error,
+  * -[x] Link to your public EDA Playground example.
 
 ## 1 Binary coparator truth table
 
