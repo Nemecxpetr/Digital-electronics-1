@@ -49,7 +49,7 @@ Karnaugh maps for all free functions
 
 Simplified SoP form of the "greater than" function and a PoS form of the "less than" function:
 
-![Simplified equations](Images\2_equations.png)
+![Simplified equations](Images/2_equations.png)
 
 ## 3 - A 4-bit binary comparator
 
