@@ -114,7 +114,7 @@ begin
     --------------------------------------------------------------------
     -- Data generation process
     --------------------------------------------------------------------
-  p_stimulus : process
+   p_stimulus : process
     begin
         -- Report a note at the begining of stimulus process
         report "Stimulus process started" severity note;
@@ -160,8 +160,6 @@ begin
     end process p_stimulus;
 
 end architecture testbench;
-
-
 ```
 
 Listing of simulator console output, i.e. with reported error:
