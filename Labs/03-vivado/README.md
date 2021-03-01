@@ -11,7 +11,7 @@
     * -[x] Screenshot with simulated time waveforms; always display all inputs and outputs.
 
 3. A Vivado tutorial. Submit:
-    * -[ ] Your tutorial for Vivado design flow: project creation, adding source file, adding testbench file, running simulation, (adding XDC constraints file).
+    * -[x] Your tutorial for Vivado design flow: project creation, adding source file, adding testbench file, running simulation, (adding XDC constraints file).
 
 ## 1. Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
 
