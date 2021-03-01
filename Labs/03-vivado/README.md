@@ -103,9 +103,23 @@ Next step is important for connection of our project to a particular board from 
 
 * Click `Finish` and the project will be made.
 
-### ![Vivado start](Images/vivado09.png)
+### ![Vivado Project](Images/vivado09.png)
 
-*
+* In sources you can open your `.vhd` file and write your code. 
+
+### ![Vivado Project](Images/vivado10.png)
+* For creating a "testbench" file chose `File/Add Sources` or a shortcut `Alt + A`
+* There you can create simulation sources
+
+### ![Vivado Project](Images/vivado10.png)
+
+* Last thing you might be interested in is runnig the simulation. 
+* That is done via `Flow/Run Simulation/Run Behavioral Simulation`
+
+![image](https://user-images.githubusercontent.com/78843182/109514709-9ea97e80-7aa6-11eb-8c1e-3b1ac6b76ba2.png)
+
+
+
 
 
 
