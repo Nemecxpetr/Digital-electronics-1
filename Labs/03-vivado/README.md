@@ -111,7 +111,7 @@ Next step is important for connection of our project to a particular board from 
 * For creating a "testbench" file chose `File/Add Sources` or a shortcut `Alt + A`
 * There you can create simulation sources
 
-### ![Vivado Project](Images/vivado10.png)
+### ![Vivado Project](Images/vivado11.png)
 
 * Last thing you might be interested in is runnig the simulation. 
 * That is done via `Flow/Run Simulation/Run Behavioral Simulation`
