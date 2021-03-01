@@ -106,9 +106,11 @@ When you open Vivado 2020.2 you should see this window:
 * `Create File` to create an equivalent to `design.vhd` in EDA Playground. 
 
 ### ![Vivado start](Images/vivado05.png)
-Click `Next` and you can add constraints. You can skip this step for you can add them later while working on the project. But the proces is same as before.
+* Click `Next` and you can add constraints (`.xdc`) You can skip this step for you can add them later while working on the project. But the proces is same as before.
+Constraints specifies which pin from a board (a board we are gonna add to our project in the next step) we are gonna use for which input or output signals of our code.
+That's basically a reason why it is ok to skip this step and do it  
 
-Next step is important for connection of our project to a particular board from xilinx we want to use.
+Next step is important for connection of our project to a particular board from Xilinx we want to use so pay attention. If you want to use Nexys 50 but don't have it [here](https://github.com/Standa-R/test-Digital-electronics-1/blob/main/HowToAddNexysA7-50TToVivado.md) is a tutorial on how to add it.
 
 ### ![Vivado start](Images/vivado06.png)
 
