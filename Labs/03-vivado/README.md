@@ -16,24 +16,24 @@
 ## 1. Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
 From this [schematic](https://github.com/tomas-fryza/Digital-electronics-1/blob/master/Docs/nexys-a7-sch.pdf) we can see the connections of slide switches and LEDs on Nexys A7 board and to which FPGA pins they are connected and how.
 
-| **SW** | **SW pins** | **LEDs** | **LED pins** |
-| :-: | :-: | :-: | :-: |
-| 1  | J15 | 1  | H17 |
-| 2  | L16 | 2  | K15 |
-| 3  | M13 | 3  | J13 |
-| 4  | R15 | 4  | N14 |
-| 5  | R17 | 5  | R18 |
-| 6  | T18 | 6  | V17 |
-| 7  | U18 | 7  | U17 |
-| 8  | R13 | 8  | U16 |
-| 9  | T8  | 9  | V16 |
-| 10 | U8  | 10 | T15 |
-| 11 | R16 | 11 | U14 |
-| 12 | T13 | 12 | T16 |
-| 13 | H6  | 13 | V15 |
-| 14 | U12 | 14 | V14 |
-| 15 | U11 | 15 | V12 |
-| 16 | V10 | 16 | V11 |
+| **SW** | **SW pins** | **Connection type** | **LEDs** | **LED pins** | **Connection Type**  |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 1  | J15 | IOSTANDARD LVCMOS33 | 1  | H17 |IOSTANDARD LVCMOS33 |
+| 2  | L16 | IOSTANDARD LVCMOS33 | 2  | K15 |IOSTANDARD LVCMOS33 |
+| 3  | M13 | IOSTANDARD LVCMOS33 | 3  | J13 |IOSTANDARD LVCMOS33 |
+| 4  | R15 | IOSTANDARD LVCMOS33 | 4  | N14 |IOSTANDARD LVCMOS33 |
+| 5  | R17 | IOSTANDARD LVCMOS33 | 5  | R18 |IOSTANDARD LVCMOS33 |
+| 6  | T18 | IOSTANDARD LVCMOS33 | 6  | V17 |IOSTANDARD LVCMOS33 |
+| 7  | U18 | IOSTANDARD LVCMOS33 | 7  | U17 |IOSTANDARD LVCMOS33 |
+| 8  | R13 | IOSTANDARD LVCMOS33 | 8  | U16 |IOSTANDARD LVCMOS33 |
+| 9  | T8  | IOSTANDARD LVCMOS18 | 9  | V16 |IOSTANDARD LVCMOS33 |
+| 10 | U8  | IOSTANDARD LVCMOS18 | 10 | T15 |IOSTANDARD LVCMOS33 |
+| 11 | R16 | IOSTANDARD LVCMOS33 | 11 | U14 |IOSTANDARD LVCMOS33 |
+| 12 | T13 | IOSTANDARD LVCMOS33 | 12 | T16 |IOSTANDARD LVCMOS33 |
+| 13 | H6  | IOSTANDARD LVCMOS33 | 13 | V15 |IOSTANDARD LVCMOS33 |
+| 14 | U12 | IOSTANDARD LVCMOS33 | 14 | V14 |IOSTANDARD LVCMOS33 |
+| 15 | U11 | IOSTANDARD LVCMOS33 | 15 | V12 |IOSTANDARD LVCMOS33 |
+| 16 | V10 | IOSTANDARD LVCMOS33 | 16 | V11 |IOSTANDARD LVCMOS33 |
 
 
 ## 2. Two-bit wide 4-to-1 multiplexer
