@@ -14,7 +14,26 @@
     * -[x] Your tutorial for Vivado design flow: project creation, adding source file, adding testbench file, running simulation, (adding XDC constraints file).
 
 ## 1. Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
+From this schematic we can see the connections of switches and LEDs to 
 
+| **SW** | **SW pins** | **LEDs** | **LED pins** |
+| :-: | :-: | :-: | :-: |
+| 1  | J15 | 1  | H17 |
+| 2  | L16 | 2  | K15 |
+| 3  | M13 | 3  | J13 |
+| 4  | R15 | 4  | N14 |
+| 5  | R17 | 5  | R18 |
+| 6  | T18 | 6  | V17 |
+| 7  | U18 | 7  | U17 |
+| 8  | R13 | 8  | U16 |
+| 9  | T8  | 9  | V16 |
+| 10 | U8  | 10 | T15 |
+| 11 | R16 | 11 | U14 |
+| 12 | T13 | 12 | T16 |
+| 13 | H6  | 13 | V15 |
+| 14 | U12 | 14 | V14 |
+| 15 | U11 | 15 | V12 |
+| 16 | V10 | 16 | V11 |
 
 
 ## 2. Two-bit wide 4-to-1 multiplexer
