@@ -109,7 +109,7 @@ Next step is important for connection of our project to a particular board from 
 
 ### ![Vivado Project](Images/vivado10.png)
 * For creating a "testbench" file chose `File/Add Sources` or a shortcut `Alt + A`
-* There you can create simulation sources
+* There you can create simulation sources (process is the same as when creating the `Design.vhd` earlier)
 
 ### ![Vivado Project](Images/vivado11.png)
 
