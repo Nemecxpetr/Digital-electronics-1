@@ -91,5 +91,7 @@ Click `Next` and you can add constraints. You can skip this step for you can add
 
 Next step is important for connection of our project to a particular board from xilinx we want to use.
 
+Click on `Boards` and choose which one you are gonna be using. In our case we will use Nexus A
+
 ### ![Vivado start](Images/vivado06.png)
 
