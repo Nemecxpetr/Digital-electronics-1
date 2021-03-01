@@ -3,7 +3,7 @@
 ## Lab assignment
 
 1. Preparation tasks (done before the lab at home). Submit:
-    * -[ ] Figure or table with connection of 16 slide switches and 16 LEDs on Nexys A7 board.
+    * -[x] Figure or table with connection of 16 slide switches and 16 LEDs on Nexys A7 board.
 
 2. Two-bit wide 4-to-1 multiplexer. Submit:
     * -[x] Listing of VHDL architecture from source file `mux_2bit_4to1.vhd` with syntax highlighting,
@@ -14,7 +14,7 @@
     * -[x] Your tutorial for Vivado design flow: project creation, adding source file, adding testbench file, running simulation, (adding XDC constraints file).
 
 ## 1. Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
-From this schematic we can see the connections of switches and LEDs to 
+From this [schematic](https://github.com/tomas-fryza/Digital-electronics-1/blob/master/Docs/nexys-a7-sch.pdf) we can see the connections of slide switches and LEDs on Nexys A7 board and to which FPGA pins they are connected and how.
 
 | **SW** | **SW pins** | **LEDs** | **LED pins** |
 | :-: | :-: | :-: | :-: |
