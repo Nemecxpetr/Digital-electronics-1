@@ -16,7 +16,7 @@
 ## 1. Table with connection of 16 slide switches and 16 LEDs on Nexys A7 board
 From this [schematic](https://github.com/tomas-fryza/Digital-electronics-1/blob/master/Docs/nexys-a7-sch.pdf) we can see the connections of slide switches and LEDs on Nexys A7 board and to which FPGA pins they are connected and how.
 
-| **SW** | **SW pins** | **Connection type** | **LEDs** | **LED pins** | **Connection Type**  |
+| **SW** | **SW pins** | **SW Connection type** | **LEDs** | **LED pins** | **SW Connection Type**  |
 | :-: | :-: | :-: | :-: | :-: | :-: |
 | 1  | J15 | IOSTANDARD LVCMOS33 | 1  | H17 |IOSTANDARD LVCMOS33 |
 | 2  | L16 | IOSTANDARD LVCMOS33 | 2  | K15 |IOSTANDARD LVCMOS33 |
