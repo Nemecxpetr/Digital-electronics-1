@@ -43,7 +43,7 @@ entity top is
        CE   : out STD_LOGIC;
        CF   : out STD_LOGIC;      
        CG   : out STD_LOGIC;
-       AN   : out STD_LOGIC                        --Common anode signals to individual displays
+       AN   : out STD_LOGIC_VECTOR(8 - 1 downto 0)                        --Common anode signals to individual displays
        );
        
 end top;
@@ -75,10 +75,10 @@ begin
     AN <= b"1111_0111";
 
     -- Display input value
-    LED(3 downto 0) <= SW;
+    LED(4 - 1 downto 0) <= SW;
 
     -- Turn LED(4) on if input value is equal to 0, ie "0000"
-    -- WRITE YOUR CODE HERE
+  --  LED(4) <= 
     
     -- Turn LED(5) on if input value is greater than "1001"
     -- WRITE YOUR CODE HERE
