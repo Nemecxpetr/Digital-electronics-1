@@ -2,8 +2,8 @@
 # Webtalk v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Mar  1 11:34:12 2021
-# Process ID: 15020
+# Start of session at: Tue Mar  2 23:04:44 2021
+# Process ID: 16828
 # Current directory: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/03-vivado/Multiplexor/Multiplexor.sim/sim_1/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/03-vivado/Multiplexor/Multiplexor.sim/sim_1/behav/xsim/xsim.dir/tb_mux_2bit_4to1_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/03-vivado/Multiplexor/Multiplexor.sim/sim_1/behav/xsim/webtalk.log
