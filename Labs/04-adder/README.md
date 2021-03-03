@@ -32,4 +32,4 @@ Half Adder                 |  Full Adder
 ![Half Adder](Images/half_adder_edited.jpg)  |  ![Full Adder](Images/full_adder.png)
 
 
-4. See schematic of the [CPLD expansion board](../../Docs/cpld_expansion.pdf) and find out the connection of LEDs, push buttons, and slide switches.
+4. See schematic of the CPLD expansion board and find out the connection of LEDs, push buttons, and slide switches.
