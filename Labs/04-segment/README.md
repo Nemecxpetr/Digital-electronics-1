@@ -1,20 +1,23 @@
-## Preparation tasks (done before the lab at home)
+# 4 Segment
+## Lab assignment
 
-The Nexys A7 board provides two four-digit common anode seven-segment LED displays (configured to behave like a single eight-digit display). See schematic or reference manual of the Nexys A7 board and find out the connection of 7-segment displays, ie to which FPGA pins are connected and how.
+1. Preparation tasks (done before the lab at home). Submit:
+    * Figure or table with connection of 7-segment displays on Nexys A7 board,
+    * Decoder truth table for common anode 7-segment display.
 
-&nbsp;
+2. Seven-segment display decoder. Submit:
+    * Listing of VHDL architecture from source file `hex_7seg.vhd` with syntax highlighting,
+    * Listing of VHDL stimulus process from testbench file `tb_hex_7seg.vhd` with syntax highlighting,
+    * Screenshot with simulated time waveforms; always display all inputs and outputs,
+    * Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
 
-&nbsp;
+3. LED(7:4) indicators. Submit:
+    * Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting,
+    * Screenshot with simulated time waveforms; always display all inputs and outputs.
 
-&nbsp;
+## 1. Preparation tasks (done before the lab at home)
 
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-Complete the decoder truth table for common anode 7-segment display.
+Truth table for common anode 7-segment display.
 
 | **Hex** | **Input** | **A** | **B** | **C** | **D** | **E** | **F** | **G** |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
