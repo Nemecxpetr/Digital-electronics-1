@@ -19,7 +19,7 @@
 
 ### Schematic with connections of 7-segment display on Nexys A7-50T.
 
-![Nexys schematic](Images/nexys scheme.png)
+![Nexys schematic](Images/nexys_scheme.png)
 
 ### Truth table for common anode 7-segment display.
 
