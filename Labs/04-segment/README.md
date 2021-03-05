@@ -185,6 +185,6 @@ hex2seg : entity work.hex_7seg
 
 ### Screenshot with simulated time waveforms
 
-![Simulation 1](Images/Simulation2.png)
+![Simulation 2](Images/Simulation2.png)
 
 
