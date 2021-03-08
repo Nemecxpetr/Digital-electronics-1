@@ -9,11 +9,11 @@
     * -[x] Listing of VHDL architecture from source file `hex_7seg.vhd` with syntax highlighting,
     * -[x] Listing of VHDL stimulus process from testbench file `tb_hex_7seg.vhd` with syntax highlighting,
     * -[x] Screenshot with simulated time waveforms; always display all inputs and outputs,
-    * -[ ] Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
+    * -[x] Listing of VHDL code from source file `top.vhd` with 7-segment module instantiation.
 
 3. LED(7:4) indicators. Submit:
-    * -[ ] Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting,
-    * -[ ] Screenshot with simulated time waveforms; always display all inputs and outputs.
+    * -[x] Truth table and listing of VHDL code for LEDs(7:4) with syntax highlighting,
+    * -[x] Screenshot with simulated time waveforms; always display all inputs and outputs.
 
 ## 1. Preparation tasks (done before the lab at home)
 
