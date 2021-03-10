@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Mar 10 15:58:01 2021
+# Process ID: 15468
+# Current directory: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21208 D:\Docs\Skola\VUT\DE1\PC\Digital-electronics-1\Labs\05-counter\counter\counter.xpr
+# Log file: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter/vivado.log
+# Journal file: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter/counter.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_cnt_up_down.tcl
+step
+close_sim
+close [ open D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd w ]
+add_files D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/top.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+add_files -norecurse D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/05-counter/counter/counter.srcs/sources_1/new/hex_7seg.vhd
+update_compile_order -fileset sources_1
