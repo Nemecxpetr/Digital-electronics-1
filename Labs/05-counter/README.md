@@ -61,4 +61,19 @@ Table with connection of push buttons on Nexys A7 board:
    
    ![Simulated time waveforms](Images/Sim1.png)
    
-   ## 3. 
+   ## 3. Top level
+   
+   Listing of VHDL code from source file `top.vhd` with all instantiations for the 4-bit bidirectional counter
+   
+   ```vhdl
+   
+   ```
+   
+   Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a different time base from Part Experiments on your own. The image can be drawn on a computer or by hand.
+   
+  
+   
+   
+   
+   
+   
