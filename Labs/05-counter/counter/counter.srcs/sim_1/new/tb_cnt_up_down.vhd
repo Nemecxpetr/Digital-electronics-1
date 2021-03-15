@@ -101,6 +101,7 @@ begin
 
         report "Stimulus process finished" severity note;
         wait;
+    
     end process p_stimulus;
 
 end architecture testbench;

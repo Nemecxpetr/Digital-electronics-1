@@ -1,4 +1,4 @@
-Running: xsim.dir/tb_cnt_up_down_behav/xsimk.exe -simmode gui -wdb tb_cnt_up_down_behav.wdb -simrunnum 0 -socket 49700
+Running: xsim.dir/tb_cnt_up_down_behav/xsimk.exe -simmode gui -wdb tb_cnt_up_down_behav.wdb -simrunnum 0 -socket 53558
 Design successfully loaded
-Design Loading Memory Usage: 5816 KB (Peak: 5816 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 5820 KB (Peak: 5820 KB)
+Design Loading CPU Usage: 46 ms
