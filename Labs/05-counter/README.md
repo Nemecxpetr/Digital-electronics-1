@@ -13,7 +13,7 @@
 
 3. Top level. Submit:
     * -[x] Listing of VHDL code from source file `top.vhd` with all instantiations for the 4-bit bidirectional counter.
-    * -[ ] Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a different time base from Part Experiments on your own. The image can be drawn on a computer or by hand.
+    * -[x] Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a different time base from Part Experiments on your own. The image can be drawn on a computer or by hand.
 
 ## 1. Preparation task
 
