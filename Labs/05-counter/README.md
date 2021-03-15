@@ -117,9 +117,9 @@ Table with connection of push buttons on Nexys A7 board:
    
    Screenshot with simulated time waveforms
    
-   ![Simulated time waveforms](Images/Sim1.png)
+   ![Simulated time waveforms](Images/sim1.png)
    
-| **![Simulated time waveforms](Images/Sim1_1.png)** | **![Simulated time waveforms](Images/Sim1_2.png)** | **![Simulated time waveforms](Images/Sim1_3.png)** |
+| **![Simulated time waveforms](Images/sim1_1.png)** | **![Simulated time waveforms](Images/sim1_2.png)** | **![Simulated time waveforms](Images/sim1_3.png)** |
    | :-: | :-: | :-: |
     
    ## 3. Top level
