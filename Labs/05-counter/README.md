@@ -179,7 +179,7 @@ Table with connection of push buttons on Nexys A7 board:
    Image of the top layer including both counters, ie a 4-bit bidirectional counter from Part 4 and a 16-bit counter with a different time base from Part Experiments on your own. The image can be drawn on a computer or by hand.
    
   
-   ![Top Layer](Images/top.jpeg)
+   ![Top Layer](Images/top.jpg)
    
    
    
