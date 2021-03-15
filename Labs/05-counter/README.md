@@ -7,8 +7,8 @@
     * -[x] Table with calculated values.
 
 2. Bidirectional counter. Submit:
-    * -[ ] Listing of VHDL code of the process `p_cnt_up_down` with syntax highlighting.
-    * -[ ] Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down.vhd` with syntax highlighting and asserts,
+    * -[x] Listing of VHDL code of the process `p_cnt_up_down` with syntax highlighting.
+    * -[x] Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down.vhd` with syntax highlighting and asserts,
     * -[ ] Screenshot with simulated time waveforms; always display all inputs and outputs,
 
 3. Top level. Submit:
@@ -74,7 +74,45 @@ Table with connection of push buttons on Nexys A7 board:
    Listing of VHDL reset and stimulus processes from testbench file `tb_cnt_up_down.vhd`
    
    ```vhdl
-   
+    --------------------------------------------------------------------
+    -- Reset generation process
+    --------------------------------------------------------------------
+    p_reset_gen : process
+    begin
+        s_reset <= '0';
+        wait for 12 ns;
+        
+        -- Reset activated
+        s_reset <= '1';
+        wait for 73 ns;
+
+        s_reset <= '0';
+        wait;
+    end process p_reset_gen;
+
+    --------------------------------------------------------------------
+    -- Data generation process
+    --------------------------------------------------------------------
+    p_stimulus : process
+    begin
+        report "Stimulus process started" severity note;
+
+        -- Enable counting
+        s_en     <= '1';
+        
+        -- Change counter direction
+        s_cnt_up <= '1';
+        wait for 380 ns;
+        s_cnt_up <= '0';
+        wait for 220 ns;
+
+        -- Disable counting
+        s_en     <= '0';
+
+        report "Stimulus process finished" severity note;
+        wait;
+    
+    end process p_stimulus;   
    ```
    
    Screenshot with simulated time waveforms
