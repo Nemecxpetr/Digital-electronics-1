@@ -6,10 +6,10 @@
     * -[x] Timing diagram figure for displaying value `3.142`.
 
 2. Display driver. Submit:
-    * -[ ] Listing of VHDL code of the process `p_mux` with syntax highlighting.
-    * -[ ] Listing of VHDL testbench file `tb_driver_7seg_4digits` with syntax highlighting and asserts,
-    * -[ ] Screenshot with simulated time waveforms; always display all inputs and outputs,
-    * -[ ] Listing of VHDL architecture of the top layer.
+    * -[x] Listing of VHDL code of the process `p_mux` with syntax highlighting.
+    * -[x] Listing of VHDL testbench file `tb_driver_7seg_4digits` with syntax highlighting and asserts,
+    * -[x] Screenshot with simulated time waveforms; always display all inputs and outputs,
+    * -[x] Listing of VHDL architecture of the top layer.
 
 3. Eight-digit driver. Submit:
     * -[ ] Image of the driver schematic. The image can be drawn on a computer or by hand.
@@ -203,7 +203,13 @@ end architecture testbench;
 
 Screenshot with simulated time waveforms
 
-![Simulated waveforms](Images/Sim1.png)
+![Simulated waveforms](Images/Sim0.png)
+
+|**![Simulated waveforms](Images/Sim1.png)**|**![Simulated waveforms](Images/Sim2.png)**|
+| :-: | :-: |
+
+![Simulated waveforms](Images/Sim3.png)
+
 
 Listing of VHDL architecture of the top layer
 
