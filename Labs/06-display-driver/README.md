@@ -273,7 +273,7 @@ end architecture behavioral;
 
 Image of the driver schematic
 
-![driver schematic](Images/schematic.png)
+![driver schematic](Images/schematic.jpg)
 
 
 
