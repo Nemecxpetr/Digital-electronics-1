@@ -48,7 +48,7 @@ Write characteristic equations and complete truth tables for D, JK, T flip-flops
    | 1 | 0 | 1 | invert |
    | 1 | 1 | 0 | invert |
    
-<!--
+
 Dokreslit průběhy pro D-latch a D-type FF.
 
 ![Timing of seven-segment display](Images/wavedrom_7-segment.png)
@@ -83,4 +83,3 @@ Dokreslit průběhy pro D-latch a D-type FF.
   },
 }
 ```
--->
