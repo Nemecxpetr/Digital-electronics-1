@@ -18,7 +18,7 @@
 4. Shift register. Submit:
     * Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
     
-## 1. Preparation tasks)
+## 1. Preparation tasks
 
 Characteristic equations and completed tables for D, JK, T flip-flops
 `Qn` represents main output value before clock edge and `Q(n+1)` represents value after the edge.
@@ -47,5 +47,39 @@ Characteristic equations and completed tables for D, JK, T flip-flops
    | 0 | 1 | 1 | no change |
    | 1 | 0 | 1 | invert |
    | 1 | 1 | 0 | invert |
+      
+ ## 2. D latch
    
+ VHDL code listing of the process `p_d_latch`
+ 
+```vhdl
+ 
+```
+
+Listing of VHDL reset and stimulus processes from the testbench `tb_d_latch` file with syntax highlighting and asserts
+ 
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+![Simulation ad2](Images/sim1.png)
+
+## 3. Flip-flops
+VHDL code listing of the processes `p_d_ff_arst`, `p_d_ff_rst`, `p_jk_ff_rst`, `p_t_ff_rst`
+```vhdl
+
+```
+Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+![Simulation ad3](Images/sim2.png)
+
+
+## Shift register
+
+Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
 
