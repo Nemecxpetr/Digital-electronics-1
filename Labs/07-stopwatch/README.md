@@ -17,8 +17,8 @@ Consider the clock enable circuit from previous laboratories and find out the va
 
    | **Frequency** | **Number of clk periods (g_MAX)** | **Number of clk periods in hex** | **Number of clk periods in binary** |
    | :-: | :-: | :-: | :-: |
-   | 100&nbsp;Hz | 10 000 000 | 'x"98_9680"' | 'b"1001 1000 1001 0110 1000 0000"' |
-   | 1000&nbsp;Hz | 1 000 000 |  'x"F_4240"' | 'b"0000 1111 0100 0010 0100 0000"' |
+   | 100&nbsp;Hz | 10 000 000 | `x"98_9680"` | `b"1001 1000 1001 0110 1000 0000"` |
+   | 1000&nbsp;Hz | 1 000 000 |  `x"F_4240"` | `b"0000 1111 0100 0010 0100 0000"` |
        
 ## 1. Stopwatch
     
