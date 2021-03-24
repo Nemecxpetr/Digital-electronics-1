@@ -49,8 +49,3 @@ Characteristic equations and completed tables for D, JK, T flip-flops
    | 1 | 1 | 0 | invert |
    
 
-Průběhy pro D-latch a D-type FF.
-
-![Timing of seven-segment display](Images/wavedrom_7-segment.png)
-
-
