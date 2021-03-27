@@ -186,6 +186,39 @@ end Behavioral;
 ```
 Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
 ```vhdl
+    p_clk_gen : process
+    begin
+        while now < 750 ns loop         -- 75 periods of 100MHz clock
+            s_clk <= '0';
+            wait for c_clk_PERIOD / 2;
+            s_clk <= '1';
+            wait for c_clk_PERIOD / 2;
+        end loop;
+        wait;
+    end process p_clk_gen;
+    
+ p_reset_gen : process
+    begin
+        -- Reset deactivated
+        s_arst <= '0';
+        wait for 28 ns;        
+        -- Reset activated
+        s_arst <= '1';
+        wait for 13 ns;
+
+        s_arst <= '0';        
+        wait for 33 ns; 
+        
+        s_arst <= '1';
+        wait for 27 ns;
+             
+        s_arst <= '0';        
+        wait for 157 ns; 
+        
+        s_arst <= '1';
+        wait;
+    end process p_reset_gen;
+    
     p_stimulus  : process
  begin
     report "Stimulus process started" severity note;
@@ -223,6 +256,7 @@ Listing of VHDL clock, reset and stimulus processes from the testbench files wit
     
  report "Stimulus process finished" severity note;
  end process p_stimulus;
+    
 ```
 
 Screenshot with simulated time waveforms
@@ -251,7 +285,42 @@ end Behavioral;
 ```
 Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
 ```vhdl
---------------------------------------------------------------------
+        --------------------------------------------------------------------
+        -- Clock generation process
+        --------------------------------------------------------------------
+        p_clk_gen : process
+        begin
+            while now < 750 ns loop         -- 75 periods of 100MHz clock
+                s_clk <= '0';
+                wait for c_CLK_PERIOD / 2;
+                s_clk <= '1';
+                wait for c_CLK_PERIOD / 2;
+            end loop;
+            wait;
+        end process p_clk_gen;
+        
+        --------------------------------------------------------------------
+        -- Reset generation process
+        --------------------------------------------------------------------        
+        p_reset_gen : process
+        begin
+            -- Reset activated
+            s_rst <= '1';
+            wait for 13 ns;
+            -- Reset deactivated
+            s_rst <= '0';
+            wait for 23 ns;
+            -- Reset activated
+            s_rst <= '1';
+            wait for 46 ns;
+            -- Reset deactivated
+            s_rst <= '0';
+            wait for 77 ns;
+            s_rst <= '1';
+            wait;
+        end process p_reset_gen;
+        
+        --------------------------------------------------------------------
         -- Data generation process
         --------------------------------------------------------------------
         p_stimulus : process
@@ -301,7 +370,7 @@ Listing of VHDL clock, reset and stimulus processes from the testbench files wit
             
             report "Stimulus process finished" severity note;
             wait;
-            end process p_stimulus;  
+            end process p_stimulus;
 ```
 
 Screenshot with simulated time waveforms
@@ -342,6 +411,7 @@ end Behavioral;
 ```
 Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
 ```vhdl
+
     --------------------------------------------------------------------
     -- Clock generation process
     --------------------------------------------------------------------
