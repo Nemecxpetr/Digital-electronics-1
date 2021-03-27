@@ -56,7 +56,7 @@ begin
       if (rst = '1') then
           s_q <= '0';
       else
-             if (j = '0' and k = '0') then  --No change
+             if (j = '0' and k = '0') then     --No change
               s_q <= s_q;
              elsif (j = '0' and k = '1') then  --Reset
                  s_q <= '0';

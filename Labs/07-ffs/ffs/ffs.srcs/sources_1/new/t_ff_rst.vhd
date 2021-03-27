@@ -44,25 +44,24 @@ end t_ff_rst;
 
 architecture Behavioral of t_ff_rst is
     signal s_q        : STD_LOGIC;
-    signal s_q_bar    : STD_LOGIC;
 
 begin
     p_t_ff_rst : process (clk)
     begin
         if rising_edge(clk) then
-            if (rst = '1') then
-                q       <= '0';
-                q_bar   <= '1';
-            else
-                if (t = '0') then
-                    q       <= s_q;
-                    q_bar   <= s_q_bar;                
-                else
-                    q       <= not s_q;
-                    q_bar   <= not s_q_bar;
+            if (rst = '1') then           --Reset
+               s_q       <= '0';       --
+            else                          --
+                if (t = '0') then         --Memory
+                    s_q       <= s_q;       --
+                else                      --Toggle
+                    s_q       <= not s_q;   --
                 end if;
             end if;
         end if;
     end process p_t_ff_rst;
+ 
+   q     <= s_q;
+   q_bar <= not s_q;  
 
 end Behavioral;

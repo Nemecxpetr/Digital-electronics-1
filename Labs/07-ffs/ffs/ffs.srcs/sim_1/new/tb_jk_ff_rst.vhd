@@ -52,12 +52,12 @@ begin
 uut_jk_ff_rst : entity work.jk_ff_rst
     port map 
 (
-         clk => s_clk,   
-         rst => s_rst, 
-         j => s_j,
-         k => s_k,  
-         q => s_q,   
-         q_bar => s_q_bar
+         clk    => s_clk,   
+         rst    => s_rst, 
+         j      => s_j,
+         k      => s_k,  
+         q      => s_q,   
+         q_bar  => s_q_bar
 );
 
     --------------------------------------------------------------------

@@ -75,8 +75,6 @@ begin
     --------------------------------------------------------------------
     p_reset_gen : process
     begin
-        s_rst <= '0';
-        wait for 33 ns;
         -- Reset activated
         s_rst <= '1';
         wait for 12 ns;
@@ -102,21 +100,20 @@ begin
     p_stimulus : process
     begin
         report "Stimulus process started" severity note;
-            s_q     <= '0';
-            s_q_bar <= '1';
-            s_t     <= '0';
-            wait for 20 ns;
-  
+            
+            s_t <= '0';
+            
             assert(s_q='0' and s_q_bar = '1')
             report "huh" severity error;
             
             --d sekvence
+            wait for 12 ns;
             s_t <= '1';
-            wait for 16 ns;
+            wait for 6 ns;
             s_t <= '0';
             wait for 16 ns;
             s_t <= '1';
-            wait for 16 ns;
+            wait for 34 ns;
             s_t <= '0';
             wait for 16 ns;
             s_t <= '1';
