@@ -175,7 +175,6 @@ Screenshot with simulated time waveforms
 
 ![Simulation ad3](Images/sim2_1.png)
 
-`p_jk_ff_rst`, `p_t_ff_rst`
 VHDL code listing of the process `p_d_ff_rst`
 ```vhdl
 
@@ -189,6 +188,31 @@ Screenshot with simulated time waveforms
 
 ![Simulation ad3](Images/sim2_2.png)
 
+VHDL code listing of the process `p_jk_ff_rst`
+```vhdl
+
+```
+Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+
+![Simulation ad3](Images/sim2_3.png)
+
+VHDL code listing of the process `p_t_ff_rst`
+```vhdl
+
+```
+Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+
+![Simulation ad3](Images/sim2_4.png)
 
 
 ## Shift register
