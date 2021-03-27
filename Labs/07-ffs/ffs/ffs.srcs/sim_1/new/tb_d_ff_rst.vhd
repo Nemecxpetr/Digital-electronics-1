@@ -81,12 +81,14 @@ begin
             wait for 13 ns;
             -- Reset deactivated
             s_rst <= '0';
-            wait for 28 ns;
+            wait for 23 ns;
             -- Reset activated
             s_rst <= '1';
-            wait for 4 ns;
+            wait for 46 ns;
             -- Reset deactivated
             s_rst <= '0';
+            wait for 77 ns;
+            s_rst <= '1';
             wait;
         end process p_reset_gen;
         
