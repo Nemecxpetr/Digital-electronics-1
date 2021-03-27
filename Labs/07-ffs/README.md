@@ -25,10 +25,10 @@ Characteristic equations and completed tables for D, JK, T flip-flops
 
   | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
-   | 0 | 0 | 1 | change |
-   | 0 | 1 | 1 | no change |
-   | 1 | 0 | 1 | change |
-   | 1 | 1 | 0 | no change |
+   | 0 | 0 | 0 | no change |
+   | 0 | 1 | 0 | change |
+   | 1 | 0 | 1 | no change |
+   | 1 | 1 | 1 | change |
 
    | **J** | **K** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
@@ -53,13 +53,108 @@ Characteristic equations and completed tables for D, JK, T flip-flops
  VHDL code listing of the process `p_d_latch`
  
 ```vhdl
- 
+ architecture Behavioral of d_latch is                                                    
+                                                                                         
+begin                                                                                    
+                                                                                         
+    ------------------------------------------------------------------------                 
+    -- p_alarm:                                                                              
+    -- A combinational process of alarm clock.                                               
+    ------------------------------------------------------------------------                 
+    p_d_latch : process (d, arst, en)                                                        
+    begin                                                                                    
+        if     (arst = '1')   then                                                                 
+            q     <= '0';                                                                    
+            q_bar <= '1';                                                                    
+        elsif  (en = '1')     then                                                               
+            q     <= d;                                                                          
+            q_bar <= not d;                                                                  
+        end if;                                                                              
+    end process p_d_latch;                                                                   
+                                                                                             
+end Behavioral;                    
 ```
 
 Listing of VHDL reset and stimulus processes from the testbench `tb_d_latch` file with syntax highlighting and asserts
  
 ```vhdl
-
+     p_stimulus  : process
+     begin
+        report "Stimulus process started" severity note;
+        
+        s_en <= '0';
+        s_d  <= '0';
+        
+        assert(s_q='0' and s_q_bar = '1')
+        report "huh" severity error;
+        
+        --d sekvence
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+     
+        assert(s_q='0' and s_q_bar = '1')
+        report "huh" severity error;    
+        
+        --/d select
+        s_en <= '1';
+        wait for 10 ns;
+       
+        --d sekvence
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+            
+        assert(s_q='0' and s_q_bar = '1')
+        report "huh" severity error;    
+        
+        --/d select
+        s_en <= '0';
+        wait for 50 ns;
+        
+        --d sekvence
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+            
+     report "Stimulus process finished" severity note;
+     end process p_stimulus;
 ```
 
 Screenshot with simulated time waveforms
