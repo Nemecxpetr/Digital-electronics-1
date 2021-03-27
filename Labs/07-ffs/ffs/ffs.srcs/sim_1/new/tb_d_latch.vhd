@@ -45,82 +45,115 @@ architecture Behavioral of tb_d_latch is
 
 begin
  
- uut_d_lach : entity work.d_latch 
-    port map 
-        (
-          en    => s_en,   
-          arst  => s_arst, 
-          d     => s_d,  
-          q     => s_q,   
-          q_bar => s_q_bar
-        );
-
- p_reset_gen : process
-    begin
-        s_arst <= '0';
-        wait for 38 ns;
+     uut_d_lach : entity work.d_latch 
+        port map 
+            (
+              en    => s_en,   
+              arst  => s_arst, 
+              d     => s_d,  
+              q     => s_q,   
+              q_bar => s_q_bar
+            );
+    
+     p_reset_gen : process
+        begin
+            s_arst <= '0';
+            wait for 38 ns;
+            
+            -- Reset activated
+            s_arst <= '1';
+            wait for 53 ns;
+    
+            -- Reset deactivated
+            s_arst <= '0';   
+            wait for 47 ns;
+            
+            s_arst <= '1';
+            wait for 21 ns;
+            
+            s_arst <= '0';   
+            wait for 300 ns;
+            
+            s_arst <= '1';
+            wait;
+        end process p_reset_gen;
+     p_stimulus  : process
+     begin
+        report "Stimulus process started" severity note;
         
-        -- Reset activated
-        s_arst <= '1';
-        wait for 53 ns;
-
-        -- Reset deactivated
-        s_arst <= '0';   
-        wait for 300 ns;
+        s_en <= '0';
+        s_d  <= '0';
         
-        s_arst <= '1';
-        wait;
-    end process p_reset_gen;
- p_stimulus  : process
- begin
-    report "Stimulus process started" severity note;
-    s_en <= '0';
-    s_d  <= '0';
-    
-    assert(s_q='0' and s_q_bar = '1')
-    report "huh" severity error;
-    
-    --d sekvence
-    wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
-    wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
-    wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
-    wait for 10 ns;
-    s_d <= '0';
-    wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
+        assert(s_q='0' and s_q_bar = '1')
+        report "huh" severity error;
         
-    
-    --/d select
-    s_en <= '1';
-   
-    --d sekvence
-     wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
-    wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
-    wait for 10 ns;
-    s_d <= '1';
-    wait for 10 ns;
-    s_d <= '0';
-    
-    
- report "Stimulus process finished" severity note;
- end process p_stimulus;
+        --d sekvence
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+     
+        assert(s_q='0' and s_q_bar = '1')
+        report "huh" severity error;    
+        
+        --/d select
+        s_en <= '1';
+        wait for 10 ns;
+       
+        --d sekvence
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+            
+        assert(s_q='0' and s_q_bar = '1')
+        report "huh" severity error;    
+        
+        --/d select
+        s_en <= '0';
+        wait for 50 ns;
+        
+        --d sekvence
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '1';
+        wait for 10 ns;
+        s_d <= '0';
+        wait for 10 ns;
+        s_d <= '0';
+            
+     report "Stimulus process finished" severity note;
+     end process p_stimulus;
     
 
     end Behavioral;

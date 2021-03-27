@@ -1,8 +1,34 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
 Note: Stimulus process started
-Time: 0 ps  Iteration: 0  Process: /tb_jk_ff_rst/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_jk_ff_rst.vhd
+Time: 0 ps  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
 Error: huh
-Time: 0 ps  Iteration: 0  Process: /tb_jk_ff_rst/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_jk_ff_rst.vhd
+Time: 0 ps  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
 Note: Stimulus process finished
-Time: 89 ns  Iteration: 0  Process: /tb_jk_ff_rst/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_jk_ff_rst.vhd
+Time: 280 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 280 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process finished
+Time: 560 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 560 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process finished
+Time: 840 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 840 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process finished
+Time: 1120 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 1120 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process finished
+Time: 1400 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 1400 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process finished
+Time: 1680 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 1680 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process finished
+Time: 1960 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
+Note: Stimulus process started
+Time: 1960 ns  Iteration: 0  Process: /tb_d_latch/p_stimulus  File: D:/Docs/Skola/VUT/DE1/PC/Digital-electronics-1/Labs/07-ffs/ffs/ffs.srcs/sim_1/new/tb_d_latch.vhd
