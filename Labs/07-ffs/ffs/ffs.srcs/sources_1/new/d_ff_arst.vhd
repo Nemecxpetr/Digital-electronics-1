@@ -35,10 +35,10 @@ entity d_ff_arst is
 Port 
     ( 
        clk    : in STD_LOGIC;    
-       arst  : in STD_LOGIC;    
-       d     : in STD_LOGIC;    
-       q     : out STD_LOGIC;   
-       q_bar : out STD_LOGIC
+       arst   : in STD_LOGIC;    
+       d      : in STD_LOGIC;    
+       q      : out STD_LOGIC;   
+       q_bar  : out STD_LOGIC
      );  
 end d_ff_arst;
 
@@ -49,12 +49,12 @@ begin
 p_ff_arst : process (clk, arst)             
 begin                                         
         if (arst = '1') then                      
-        q     <= '0';                         
-        q_bar <= '1';
+            q     <= '0';                         
+            q_bar <= '1';
                                 
         elsif  rising_edge(clk) then                    
-        q <= d;                               
-        q_bar <= not d;                       
+            q <= d;                               
+            q_bar <= not d;                       
         end if;                                   
 end process p_ff_arst;                        
 
