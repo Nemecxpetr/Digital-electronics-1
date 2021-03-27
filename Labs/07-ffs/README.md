@@ -6,9 +6,9 @@
     * -[x] Characteristic equations and completed tables for D, JK, T flip-flops.
 
 2. D latch. Submit:
-    * -[ ] VHDL code listing of the process `p_d_latch` with syntax highlighting,
-    * -[ ] Listing of VHDL reset and stimulus processes from the testbench `tb_d_latch` file with syntax highlighting and asserts,
-    * -[ ] Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entity must be verified.
+    * -[x] VHDL code listing of the process `p_d_latch` with syntax highlighting,
+    * -[x] Listing of VHDL reset and stimulus processes from the testbench `tb_d_latch` file with syntax highlighting and asserts,
+    * -[x] Screenshot with simulated time waveforms; always display all inputs and outputs. The full functionality of the entity must be verified.
 
 3. Flip-flops. Submit:
     * -[ ] VHDL code listing of the processes `p_d_ff_arst`, `p_d_ff_rst`, `p_jk_ff_rst`, `p_t_ff_rst` with syntax highlighting,
@@ -22,6 +22,8 @@
 
 Characteristic equations and completed tables for D, JK, T flip-flops
 `Qn` represents main output value before clock edge and `Q(n+1)` represents value after the edge.
+
+![Equations](Images/eq.png)
 
   | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
@@ -158,10 +160,11 @@ Listing of VHDL reset and stimulus processes from the testbench `tb_d_latch` fil
 ```
 
 Screenshot with simulated time waveforms
+
 ![Simulation ad2](Images/sim1.png)
 
 ## 3. Flip-flops
-VHDL code listing of the processes `p_d_ff_arst`, `p_d_ff_rst`, `p_jk_ff_rst`, `p_t_ff_rst`
+VHDL code listing of the process `p_d_ff_arst`
 ```vhdl
 
 ```
@@ -171,7 +174,47 @@ Listing of VHDL clock, reset and stimulus processes from the testbench files wit
 ```
 
 Screenshot with simulated time waveforms
-![Simulation ad3](Images/sim2.png)
+
+![Simulation ad3](Images/sim2_1.png)
+
+VHDL code listing of the process `p_d_ff_rst`
+```vhdl
+
+```
+Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+
+![Simulation ad3](Images/sim2_2.png)
+
+VHDL code listing of the process `p_jk_ff_rst`
+```vhdl
+
+```
+Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+
+![Simulation ad3](Images/sim2_3.png)
+
+VHDL code listing of the process `p_t_ff_rst`
+```vhdl
+
+```
+Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
+```vhdl
+
+```
+
+Screenshot with simulated time waveforms
+
+![Simulation ad3](Images/sim2_4.png)
 
 
 ## Shift register
