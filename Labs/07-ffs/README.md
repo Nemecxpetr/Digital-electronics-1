@@ -23,6 +23,8 @@
 Characteristic equations and completed tables for D, JK, T flip-flops
 `Qn` represents main output value before clock edge and `Q(n+1)` represents value after the edge.
 
+![Equations](Images/eq.png)
+
   | **D** | **Qn** | **Q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-- |
    | 0 | 0 | 0 | no change |
