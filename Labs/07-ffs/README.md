@@ -166,11 +166,63 @@ Screenshot with simulated time waveforms
 ## 3. Flip-flops
 VHDL code listing of the process `p_d_ff_arst`
 ```vhdl
+architecture Behavioral of d_ff_arst is
 
+begin
+
+p_d_ff_arst : process (clk, arst)             
+begin                                         
+        if (arst = '1') then                      
+            q     <= '0';                         
+            q_bar <= '1';
+                                
+        elsif  rising_edge(clk) then                    
+            q <= d;                               
+            q_bar <= not d;                       
+        end if;                                   
+end process p_d_ff_arst;                        
+
+end Behavioral;
 ```
 Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
 ```vhdl
-
+    p_stimulus  : process
+ begin
+    report "Stimulus process started" severity note;
+    s_d  <= '0';
+    
+    --d sekvence
+    wait for 14 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 8 ns;
+    
+    assert(s_q='0' and s_q_bar = '1')
+    report "huh" severity error;
+    
+    --d sekvence
+    wait for 10 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 10 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 10 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 10 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    
+ report "Stimulus process finished" severity note;
+ end process p_stimulus;
 ```
 
 Screenshot with simulated time waveforms
