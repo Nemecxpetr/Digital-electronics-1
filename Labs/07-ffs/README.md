@@ -231,11 +231,77 @@ Screenshot with simulated time waveforms
 
 VHDL code listing of the process `p_d_ff_rst`
 ```vhdl
+architecture Behavioral of d_ff_rst is
+
+begin
+    p_d_ff_rst : process (clk)
+    begin
+        if rising_edge(clk) then
+            if (rst = '1') then
+                q       <= '0';
+                q_bar   <= '1';
+            else
+                q       <= d;
+                q_bar   <= not d;
+            end if;
+        end if;
+    end process p_d_ff_rst;
+end Behavioral;
 
 ```
 Listing of VHDL clock, reset and stimulus processes from the testbench files with syntax highlighting and asserts
 ```vhdl
-
+--------------------------------------------------------------------
+        -- Data generation process
+        --------------------------------------------------------------------
+        p_stimulus : process
+        begin
+            report "Stimulus process started" severity note;
+                                                 
+                --d sekvence
+                s_d <= '1';
+                wait for 10 ns;
+                s_d <= '0';
+                wait for 10 ns;  
+                s_d <= '1';
+                wait for 10 ns;  
+                s_d <= '0';
+                wait for 10 ns;  
+                
+                assert (s_q = '0' and s_q_bar = '1')
+                report "process failed" severity error;
+                
+                wait for 10 ns;
+                s_d <= '1'; wait for 20 ns;
+                
+                assert (s_q = '1' and s_q_bar = '0')
+                report "process failed" severity error;
+                
+                wait for 10 ns;
+                s_d <= '0';
+                wait for 10 ns;
+                s_d <= '1';
+                wait for 10 ns;  
+                s_d <= '0';
+                wait for 10 ns;  
+                s_d <= '1';
+                wait for 10 ns;  
+                s_d <= '0';
+                wait for 10 ns;  
+                s_d <= '1';
+                wait for 10 ns;    
+                s_d <= '0';
+                wait for 10 ns;  
+                s_d <= '1';
+                wait for 10 ns;  
+                s_d <= '0';
+                wait for 10 ns;  
+                s_d <= '1';
+                wait for 10 ns;     
+            
+            report "Stimulus process finished" severity note;
+            wait;
+            end process p_stimulus;  
 ```
 
 Screenshot with simulated time waveforms
