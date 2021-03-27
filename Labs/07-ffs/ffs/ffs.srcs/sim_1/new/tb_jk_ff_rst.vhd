@@ -84,13 +84,18 @@ uut_jk_ff_rst : entity work.jk_ff_rst
         wait for 13 ns;
         -- Reset deactivated
         s_rst <= '0';
-        wait for 28 ns;
-        -- Reset activated
+        wait for 65 ns;
         s_rst <= '1';
         wait for 13 ns;
         -- Reset deactivated
         s_rst <= '0';
-
+        wait for 25 ns;
+        s_rst <= '1';
+        wait for 13 ns;
+        -- Reset deactivated
+        s_rst <= '0';
+        wait for 40 ns;
+        s_rst <= '1';
         wait;
     end process p_reset_gen;
     
@@ -107,16 +112,28 @@ uut_jk_ff_rst : entity work.jk_ff_rst
             wait for 40 ns;
             s_j <= '0';
             s_k <= '0';
-            wait for 7 ns;
+            wait for 13 ns;
             s_j <= '0';
             s_k <= '1';
-            wait for 7 ns;
+            wait for 16 ns;
             s_j <= '1';
             s_k <= '0';
-            wait for 7 ns;
+            wait for 17 ns;
             s_j <= '1';
             s_k <= '1';
         
+            wait for 12 ns;
+            s_j <= '0';
+            s_k <= '0';
+            wait for 17 ns;
+            s_j <= '0';
+            s_k <= '1';
+            wait for 9 ns;
+            s_j <= '1';
+            s_k <= '0';
+            wait for 18 ns;
+            s_j <= '1';
+            s_k <= '1';
             wait for 14 ns;
             s_j <= '0';
             s_k <= '0';

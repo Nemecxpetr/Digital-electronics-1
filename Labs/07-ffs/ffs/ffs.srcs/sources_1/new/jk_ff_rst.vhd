@@ -45,8 +45,9 @@ Port
 end jk_ff_rst;
 
 architecture Behavioral of jk_ff_rst is
-    signal s_q : std_logic;
 
+    signal s_q : std_logic;
+    
 begin
 
 p_jk_ff_rst : process (clk)             
