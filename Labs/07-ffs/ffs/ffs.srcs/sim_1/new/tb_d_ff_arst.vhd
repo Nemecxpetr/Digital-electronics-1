@@ -71,19 +71,23 @@ begin
     
  p_reset_gen : process
     begin
+        -- Reset deactivated
         s_arst <= '0';
-        wait for 28 ns;
-        
+        wait for 28 ns;        
         -- Reset activated
         s_arst <= '1';
         wait for 13 ns;
 
-        -- Reset deactivated
-        s_arst <= '0';
-        
+        s_arst <= '0';        
         wait for 33 ns; 
+        
         s_arst <= '1';
-
+        wait for 27 ns;
+             
+        s_arst <= '0';        
+        wait for 157 ns; 
+        
+        s_arst <= '1';
         wait;
     end process p_reset_gen;
     
@@ -91,6 +95,13 @@ begin
  begin
     report "Stimulus process started" severity note;
     s_d  <= '0';
+    
+    --d sekvence
+    wait for 14 ns;
+    s_d <= '1';
+    wait for 10 ns;
+    s_d <= '0';
+    wait for 8 ns;
     
     assert(s_q='0' and s_q_bar = '1')
     report "huh" severity error;
