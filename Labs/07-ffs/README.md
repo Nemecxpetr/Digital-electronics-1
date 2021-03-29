@@ -16,7 +16,7 @@
     * -[x] Screenshot, with simulated time waveforms; always display all inputs and outputs. The full functionality of the entities must be verified.
 
 4. Shift register. Submit:
-    * -[ ] Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
+    * -[x] Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
     
 ## 1. Preparation tasks
 
