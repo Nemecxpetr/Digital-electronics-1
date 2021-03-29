@@ -50,10 +50,10 @@ begin
         uut_d_ff_rst : entity work.d_ff_rst
             port map 
         (
-                 clk => s_clk,   
-                 rst => s_rst, 
-                 d => s_d,
-                 q => s_q,   
+                 clk   => s_clk,   
+                 rst   => s_rst, 
+                 d     => s_d,
+                 q     => s_q,   
                  q_bar => s_q_bar
         );
         
