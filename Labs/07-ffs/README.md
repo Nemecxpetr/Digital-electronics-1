@@ -614,5 +614,8 @@ Screenshot with simulated time waveforms
 
 ## Shift register
 
-Image of the shift register schematic. The image can be drawn on a computer or by hand. Name all inputs, outputs, components and internal signals.
+Image of the shift register schematic.
+
+![Shift register](Images/shift_register.jpg)
+
 
