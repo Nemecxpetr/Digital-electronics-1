@@ -4,7 +4,7 @@
 
 1. Preparation tasks (done before the lab at home). Submit:
     * -[x] Completed state table,
-    * -[ ] Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings.
+    * -[x] Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings.
 
 2. Traffic light controller. Submit:
     * -[ ] Listing of VHDL code of sequential process `p_traffic_fsm` with syntax highlighting,
@@ -29,7 +29,10 @@ Fill in the table with the state names and output values accoding to the given i
 | **State** | A | A | B | C | C | D | A | B | C | D | B | B | B | c | D | B |
 | **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `0` | `1` | `0` |
 
-See schematic or reference manual of the Nexys board and find out the connection of two RGB LEDs. How you can control them to get red, yellow, or green colors?
+See schematic or reference manual of the Nexys board and see table with the connection of two RGB LEDs. 
+
+![Nexys reference manual](Images/nexys_ref.png)
+
 
 | **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
 | :-: | :-: | :-: | :-: | :-: |
