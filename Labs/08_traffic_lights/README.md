@@ -162,7 +162,7 @@ Detail of rising edge for synchronous reset
 
 
 ## 3. Smart controller
-
+States we will need
 | **Current state** | **Direction South** | **Direction West** | **Delay** |
 | :-- | :-: | :-: | :-: |
 | `WEST_GO`    | red    | green | 4 sec |
@@ -172,8 +172,7 @@ Detail of rising edge for synchronous reset
 <!--* | `STOP1` | red    | red | 1 sec |
 | `STOP2`      | red    | red | 1 sec | -->
 
-
-State table
+State table with conditions for sensors
 | **Current state\Input** | **No cars** | **Cars to West** | **Carst to South** | **Cars both directions** |
 | :-- | :-: | :-: | :-: | :-: |
 | `WEST_GO`    | `WEST_GO`    | `WEST_GO` | `WEST_WAIT` | `WEST_WAIT` |
@@ -186,7 +185,7 @@ State diagram
  ![Simulation of smart traffic](Images/Diag2.png)
 
 Listing of VHDL code of sequential process `p_smart_traffic_fsm`
-
+(longer version)
 ```vhdl
 p_smart_traffic_fsm : process(clk)
     begin
