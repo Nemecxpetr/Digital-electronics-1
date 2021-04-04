@@ -42,7 +42,7 @@ begin
             clk     => s_clk_100MHz,
             reset   => s_reset,
             south_i => s_south_i,
-            west_i  => s_south_i,
+            west_i  => s_west_i,
             south_o => s_south_o,
             west_o  => s_west_o
         );
@@ -66,9 +66,9 @@ begin
     --------------------------------------------------------------------
     p_reset_gen : process
     begin
-        s_reset <= '0'; wait for 200 ns;
+        s_reset <= '0'; wait for 100 ns;
         -- Reset activated
-        s_reset <= '1'; wait for 500 ns;
+        s_reset <= '1'; wait for 100 ns;
         -- Reset deactivated
         s_reset <= '0';
         wait;
@@ -82,44 +82,20 @@ begin
         report "Stimulus process started" severity note;
         s_south_i <= '0';
         s_west_i  <= '0';
-        wait for 720 ns;
+        wait for 50 ns;
+        s_south_i <= '1';
+        s_west_i  <= '1';
+        wait for 180 ns;
         s_south_i <= '1';
         s_west_i  <= '0';
-        wait for 200 ns;
+        wait for 350 ns;
         s_south_i <= '1';
         s_west_i  <= '1';
-        wait for 200 ns;
+        wait for 450 ns;
         s_south_i <= '0';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '0';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '0';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '0';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '0';
-        s_west_i  <= '1';
-        wait for 200 ns;
-        s_south_i <= '1';
-        s_west_i  <= '1';
-        wait for 200 ns;
+        s_west_i  <= '1';             
         wait;
+        report "Stimulus process finished" severity note;
     end process p_stimulus;
 
 end architecture testbench;

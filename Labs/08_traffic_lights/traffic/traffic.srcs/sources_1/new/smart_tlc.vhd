@@ -47,8 +47,7 @@ architecture Behavioral of smart_tlc is
                      WEST_GO,
                      WEST_WAIT,
                      SOUTH_GO,
-                     SOUTH_WAIT
-                     );
+                     SOUTH_WAIT);
     -- Define the signal that uses different states
     signal s_state  : t_state;
 
@@ -103,10 +102,16 @@ begin
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
                         else
-                            if (west_i = '1' and south_i = '0') then
+                            if (south_i = '0' and west_i = '0') then
                                 s_state <= WEST_GO;
-                            else
+                            elsif (south_i = '0' and west_i = '1') then
+                                s_state <= WEST_GO;
+                            elsif (south_i = '1' and west_i = '0') then
                                 s_state <= WEST_WAIT;
+                            elsif(south_i = '1' and west_i = '1') then
+                                s_state <= WEST_WAIT;    
+                            else
+                                s_state <= WEST_GO;
                             end if;    
                             s_cnt   <= c_ZERO;
                         end if;
@@ -122,11 +127,17 @@ begin
                         if (s_cnt < c_DELAY_4SEC) then
                             s_cnt <= s_cnt + 1;
                         else
-                            if (west_i = '0' and south_i = '1') then
+                            if (south_i = '0' and west_i = '0') then
                                 s_state <= SOUTH_GO;
+                            elsif (south_i = '0' and west_i = '1') then
+                                s_state <= SOUTH_WAIT;
+                            elsif (south_i = '1' and west_i = '0') then
+                                s_state <= SOUTH_GO;
+                            elsif(south_i = '1' and west_i = '1') then
+                                s_state <= SOUTH_WAIT;    
                             else
                                 s_state <= SOUTH_WAIT;
-                            end if;
+                            end if;    
                             s_cnt   <= c_ZERO;
                         end if;
                         
@@ -158,14 +169,14 @@ begin
     p_output_smart_fsm : process(s_state)
     begin
         case s_state is
-            when WEST_GO =>
+                when WEST_GO =>
                 south_o <= "100";   -- Red (RGB = 100)
                 west_o  <= "010";   -- Green (RGB = 010)
                 
             when WEST_WAIT =>
                 south_o <= "100";   -- Red (RGB = 100)
                 west_o  <= "110";   -- Yellow (RGB = 110)
-                            
+            
             when SOUTH_GO =>
                 south_o <= "010";   -- Green (RGB = 010)
                 west_o  <= "100";   -- Red (RGB = 100)
