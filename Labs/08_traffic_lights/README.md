@@ -15,7 +15,7 @@
 
 3. Smart controller. Submit:
     * -[x] State table,
-    * -[ ] State diagram,
+    * -[x] State diagram,
     * -[x] Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting.
 
 ## 1. Preparation tasks (done before the lab at home)
