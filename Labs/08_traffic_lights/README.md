@@ -11,7 +11,7 @@
     * -[x] Listing of VHDL code of sequential process `p_traffic_fsm` with syntax highlighting,
     * -[x] Listing of VHDL code of combinatorial process `p_output_fsm` with syntax highlighting,
     * -[x] Screenshot(s) of the simulation, from which it is clear that controller works correctly.
-    <!--* Listing of VHDL architecture of the top layer.-->
+    <!--* -[ ] Listing of VHDL architecture of the top layer.-->
 
 3. Smart controller. Submit:
     * -[ ] State table,
@@ -22,12 +22,12 @@
 
 Read the article [Implementing a Finite State Machine in VHDL](https://www.allaboutcircuits.com/technical-articles/implementing-a-finite-state-machine-in-vhdl/) (parts **A Bit of Background** and **The Finite State Machine**) and understand what an FSM is.
 
-Fill in the table with the state names and output values accoding to the given inputs. Let the reset has just been applied.
+Table with the state names and output values accoding to the given inputs. Let the reset has just been applied.
 
 | **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
 | :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | **Clock** | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) | ![rising](Images/eq_uparrow.png) |
-| **State** | A | A | B | C | C | D | A | B | C | D | B | B | B | c | D | B |
+| **State** | A | A | B | C | C | D | A | B | C | D | B | B | B | C | D | B |
 | **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `0` | `1` | `0` |
 
 See schematic or reference manual of the Nexys board and see table with the connection of two RGB LEDs. 
