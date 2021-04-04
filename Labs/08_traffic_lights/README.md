@@ -14,9 +14,9 @@
     <!--* -[ ] Listing of VHDL architecture of the top layer.-->
 
 3. Smart controller. Submit:
-    * -[ ] State table,
+    * -[x] State table,
     * -[ ] State diagram,
-    * -[ ] Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting.
+    * -[x] Listing of VHDL code of sequential process `p_smart_traffic_fsm` with syntax highlighting.
 
 ## 1. Preparation tasks (done before the lab at home)
 
@@ -181,3 +181,158 @@ State table
 | `SOUTH_GO`   | `SOUTH_GO`  | `SOUTH_WAIT` | `SOUTH_GO` | `SOUTH_WAIT` |
 | `SOUTH_WAIT` | `WEST_GO` | `WEST_GO` | `WEST_GO` | `WEST_GO` |
 
+State diagram
+
+ ![Simulation of smart traffic](Images/Diag2.png)
+
+Listing of VHDL code of sequential process `p_smart_traffic_fsm`
+
+```vhdl
+p_smart_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then       -- Synchronous reset
+                s_state <= WEST_GO ;    -- Set initial state
+                s_cnt   <= c_ZERO;      -- Clear all bits
+
+            elsif (s_en = '1') then
+                -- Every 250 ms, CASE checks the value of the s_state 
+                -- variable and changes to the next state according 
+                -- to the delay value.
+                case s_state is
+                    when WEST_GO =>
+                        if (s_cnt < c_DELAY_4SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            if (south_i = '0' and west_i = '0') then
+                                s_state <= WEST_GO;
+                            elsif (south_i = '0' and west_i = '1') then
+                                s_state <= WEST_GO;
+                            elsif (south_i = '1' and west_i = '0') then
+                                s_state <= WEST_WAIT;
+                            elsif(south_i = '1' and west_i = '1') then
+                                s_state <= WEST_WAIT;    
+                            else
+                                s_state <= WEST_GO;
+                            end if;    
+                            s_cnt   <= c_ZERO;
+                        end if;
+                        
+                    when WEST_WAIT =>
+                        if (s_cnt < c_DELAY_2SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= SOUTH_GO;
+                            s_cnt   <= c_ZERO;
+                        end if;
+                   when SOUTH_GO =>
+                        if (s_cnt < c_DELAY_4SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            if (south_i = '0' and west_i = '0') then
+                                s_state <= SOUTH_GO;
+                            elsif (south_i = '0' and west_i = '1') then
+                                s_state <= SOUTH_WAIT;
+                            elsif (south_i = '1' and west_i = '0') then
+                                s_state <= SOUTH_GO;
+                            elsif(south_i = '1' and west_i = '1') then
+                                s_state <= SOUTH_WAIT;    
+                            else
+                                s_state <= SOUTH_WAIT;
+                            end if;    
+                            s_cnt   <= c_ZERO;
+                        end if;
+                        
+                    when SOUTH_WAIT =>
+                        if (s_cnt < c_DELAY_2SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= WEST_GO;
+                            s_cnt   <= c_ZERO;
+                        end if;
+
+                    -- It is a good programming practice to use the 
+                    -- OTHERS clause, even if all CASE choices have 
+                    -- been made. 
+                    when others =>
+                        s_state <= WEST_GO;
+
+                end case;
+            end if; -- Synchronous reset
+        end if; -- Rising edge
+    end process p_smart_traffic_fsm;
+```
+<!--* Orriginaly 
+```vhdl
+p_smart_traffic_fsm : process(clk)
+    begin
+        if rising_edge(clk) then
+            if (reset = '1') then       -- Synchronous reset
+                s_state <= WEST_GO ;    -- Set initial state
+                s_cnt   <= c_ZERO;      -- Clear all bits
+
+            elsif (s_en = '1') then
+                -- Every 250 ms, CASE checks the value of the s_state 
+                -- variable and changes to the next state according 
+                -- to the delay value.
+                case s_state is
+                    when WEST_GO =>
+                        if (s_cnt < c_DELAY_4SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            if (south_i = '0') then
+                                s_state <= WEST_GO;
+                            elsif (south_i = '1') then
+                                s_state <= WEST_WAIT;    
+                            else
+                                s_state <= WEST_GO;
+                            end if;    
+                            s_cnt   <= c_ZERO;
+                        end if;
+                        
+                    when WEST_WAIT =>
+                        if (s_cnt < c_DELAY_2SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= SOUTH_GO;
+                            s_cnt   <= c_ZERO;
+                        end if;
+                   when SOUTH_GO =>
+                        if (s_cnt < c_DELAY_4SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            if (west_i = '0') then
+                                s_state <= SOUTH_GO;
+                            elsif (west_i = '1') then
+                                s_state <= SOUTH_WAIT;                               
+                            else
+                                s_state <= SOUTH_WAIT;
+                            end if;    
+                            s_cnt   <= c_ZERO;
+                        end if;
+                        
+                    when SOUTH_WAIT =>
+                        if (s_cnt < c_DELAY_2SEC) then
+                            s_cnt <= s_cnt + 1;
+                        else
+                            s_state <= WEST_GO;
+                            s_cnt   <= c_ZERO;
+                        end if;
+
+                    -- It is a good programming practice to use the 
+                    -- OTHERS clause, even if all CASE choices have 
+                    -- been made. 
+                    when others =>
+                        s_state <= WEST_GO;
+
+                end case;
+            end if; -- Synchronous reset
+        end if; -- Rising edge
+    end process p_smart_traffic_fsm;
+```-->
+
+
+Simulation 
+ ![Simulation of smart traffic](Images/Sim2.png)
+ 
+ 
