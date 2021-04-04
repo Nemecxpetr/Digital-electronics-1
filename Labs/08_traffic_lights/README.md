@@ -41,6 +41,9 @@ See schematic or reference manual of the Nexys board and see table with the conn
 | LD17 |  N16, R11, G14| `1,0,0` | `1,1,0` | `0,1,0` |
 
 ## 2. Traffic light controller
+State diagram
+
+![State diagram](Images/Diag1.pdf)
 
 Listing of VHDL code of sequential process `p_traffic_fsm`
 ```vhdl
