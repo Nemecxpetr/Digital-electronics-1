@@ -7,9 +7,9 @@
     * -[x] Figure with connection of RGB LEDs on Nexys A7 board and completed table with color settings.
 
 2. Traffic light controller. Submit:
-    * -[ ] Listing of VHDL code of sequential process `p_traffic_fsm` with syntax highlighting,
-    * -[ ] Listing of VHDL code of combinatorial process `p_output_fsm` with syntax highlighting,
-    * -[ ] Screenshot(s) of the simulation, from which it is clear that controller works correctly.
+    * -[x] Listing of VHDL code of sequential process `p_traffic_fsm` with syntax highlighting,
+    * -[x] Listing of VHDL code of combinatorial process `p_output_fsm` with syntax highlighting,
+    * -[x] Screenshot(s) of the simulation, from which it is clear that controller works correctly.
     <!--* -[ ] Listing of VHDL architecture of the top layer.-->
 
 3. Smart controller. Submit:
@@ -150,9 +150,11 @@ p_output_fsm : process(s_state)
 
 Screenshot(s) of the simulation, from which it is clear that controller works correctly
 
-![Simulation of traff_light_controller](Images/sim1.png)
+![Simulation of traff_light_controller](Images/Sim1.png)
 
 
+Detail of rising edge for synchronous reset
+![Simulation of traff_light_controller](Images/Sim1.png)
 
 
 ## 3. Smart controller
