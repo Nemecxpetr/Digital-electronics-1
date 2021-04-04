@@ -47,7 +47,8 @@ architecture Behavioral of smart_tlc is
                      WEST_GO,
                      WEST_WAIT,
                      SOUTH_GO,
-                     SOUTH_WAIT);
+                     SOUTH_WAIT
+                     );
     -- Define the signal that uses different states
     signal s_state  : t_state;
 
