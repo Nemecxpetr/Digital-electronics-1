@@ -154,7 +154,7 @@ Screenshot(s) of the simulation, from which it is clear that controller works co
 
 
 Detail of rising edge for synchronous reset
-![Simulation of traff_light_controller](Images/Sim1.png)
+![Simulation of traff_light_controller](Images/sim1_reset_detail.png)
 
 
 ## 3. Smart controller
