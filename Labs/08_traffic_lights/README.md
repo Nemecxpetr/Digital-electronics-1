@@ -163,3 +163,11 @@ Detail of rising edge for synchronous reset
 
 ## 3. Smart controller
 
+State table
+| **Current state\Input** | **No cars** | **Cars to West** | **Carst to South** | **Cars both directions** |
+| :-- | :-: | :-: | :-: | :-: |
+| `WEST_GO`    | `WEST_GO`    | `WEST_GO` | `WEST_WAIT` | `WEST_WAIT` |
+| `WEST_WAIT`  | `SOUTH_GO` | `SOUTH_GO` | `SOUTH_GO` | `SOUTH_GO` |
+| `SOUTH_GO`   | `SOUTH_GO`  | `SOUTH_WAIT` | `SOUTH_GO` | `SOUTH_WAIT` |
+| `SOUTH_WAIT` | `WEST_GO` | `WEST_GO` | `WEST_GO` | `WEST_GO` |
+
