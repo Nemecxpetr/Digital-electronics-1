@@ -43,7 +43,7 @@ See schematic or reference manual of the Nexys board and see table with the conn
 ## 2. Traffic light controller
 State diagram
 
-![State diagram](Images/Diag1.pdf)
+![State diagram](Images/Diag1.png)
 
 Listing of VHDL code of sequential process `p_traffic_fsm`
 ```vhdl
